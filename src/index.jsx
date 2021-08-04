@@ -6,6 +6,10 @@ import { LoginControl } from "./loginControl";
 import { Mailbox } from "./mailbox";
 import { Page } from "./page";
 import { ListItems } from "./ListItems";
+import { NameForm } from "./nameForm";
+import { EssayForm } from "./essayForm";
+import { FlavorForm } from "./flavorForm";
+import { Reservation } from "./reservation";
 
 const messages = ["React", "Re: React", "Re:Re: React"];
 const numbers = [1, 2, 3, 4, 5];
@@ -17,6 +21,12 @@ const element = (
     <Form />
     <Toggle />
     <ListItems numbers={numbers} />
+    <NameForm />
+    <EssayForm />
+    <FlavorForm />
+    <input type="file" />
+    https://ja.reactjs.org/docs/uncontrolled-components.html#the-file-input-tag
+    <Reservation />
   </div>
 );
 ReactDOM.render(element, document.getElementById("root"));
