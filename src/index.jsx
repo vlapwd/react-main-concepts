@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 import { Form } from "./form";
 import { Toggle } from "./toggle";
 import { LoginControl } from "./loginControl";
@@ -11,6 +12,7 @@ import { EssayForm } from "./essayForm";
 import { FlavorForm } from "./flavorForm";
 import { Reservation } from "./reservation";
 import { Calculator } from "./calculator";
+import { SpecializationWelcomeDialog, WelcomeDialog } from "./welcomeDialog";
 
 const messages = ["React", "Re: React", "Re:Re: React"];
 const numbers = [1, 2, 3, 4, 5];
@@ -29,6 +31,8 @@ const element = (
     {/* https://ja.reactjs.org/docs/uncontrolled-components.html#the-file-input-tag */}
     <Reservation />
     <Calculator />
+    <WelcomeDialog />
+    <SpecializationWelcomeDialog />
   </div>
 );
 ReactDOM.render(element, document.getElementById("root"));
